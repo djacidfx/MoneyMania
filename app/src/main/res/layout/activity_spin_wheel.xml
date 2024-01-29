@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbackg"
+    tools:context=".Activites.SpinWheelActivity">
+
+
+    <TextView
+        android:id="@+id/noSpinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="You have no spins left please come back tommorrow or go to reward section to get more spins"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinWheel"
+        app:layout_constraintVertical_bias="0.881" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spins, left"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/spinWheel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinNumber"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <TextView
+        android:id="@+id/spinNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/spinWheel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <TextView
+        android:id="@+id/spinTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/spinWheel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="You Currently Have,"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/spinWheel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+   <View
+       android:id="@+id/back5"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:layout_marginStart="16dp"
+       android:background="@drawable/round_view"
+       android:backgroundTint="@color/black"
+       app:layout_constraintBottom_toBottomOf="@+id/toolbar6"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="@+id/toolbar6"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/back5"
+        app:layout_constraintEnd_toEndOf="@+id/back5"
+        app:layout_constraintStart_toStartOf="@+id/back5"
+        app:layout_constraintTop_toTopOf="@+id/back5"
+        app:srcCompat="@drawable/back"/>
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="-10dp"
+        android:background="@drawable/coin_backg"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar6"
+        app:layout_constraintEnd_toEndOf="@id/toolbar6"
+        app:layout_constraintTop_toTopOf="@+id/toolbar6"/>
+    <ImageView
+        android:id="@+id/coin_img2"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/coin"
+        app:layout_constraintBottom_toBottomOf="@+id/view10"
+        app:layout_constraintStart_toStartOf="@+id/view10"
+        app:layout_constraintTop_toTopOf="@+id/view10"/>
+    <TextView
+        android:id="@+id/totalCoins5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_img2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coin_img2"
+        app:layout_constraintTop_toTopOf="@+id/coin_img2"/>
+
+
+    <ImageView
+        android:id="@+id/spinWheel"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6"
+        app:layout_constraintVertical_bias="0.76"
+        app:srcCompat="@drawable/spin_wheel" />
+
+
+    <ImageView
+        android:id="@+id/spinArrow"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinWheel"
+        app:layout_constraintEnd_toEndOf="@+id/spinWheel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinWheel"
+        app:layout_constraintVertical_bias="0.71000004"
+        app:srcCompat="@drawable/spin_arrow" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/spinAnimation"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/spinWheel"
+        app:layout_constraintEnd_toEndOf="@+id/spinWheel"
+        app:layout_constraintStart_toStartOf="@+id/spinWheel"
+        app:layout_constraintTop_toTopOf="@+id/spinWheel"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_imageAssetsFolder="images"
+        app:lottie_rawRes="@raw/win" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Spin wheel and win upto 100 coins"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar6"
+        app:layout_constraintStart_toStartOf="@+id/toolbar6"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

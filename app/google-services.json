@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "569625986514",
+    "project_id": "moneymania-80dd6",
+    "storage_bucket": "moneymania-80dd6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569625986514:android:460cff6826dbf472ba340b",
+        "android_client_info": {
+          "package_name": "com.tanishgarg.tns.moneymania"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOf2ML9W6pPXN3_evfsODLRyKkgYpxMvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
